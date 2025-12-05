@@ -23,7 +23,18 @@
         <a href="#pricing">Pricing</a>
         <a href="#signup" class="nav-cta">Get Started</a>
       </nav>
+
+      <button class="mobile-toggle" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="16" viewBox="0 0 20 16" aria-hidden="true"><path fill="currentColor" d="M0 2h20v2H0zM0 7h20v2H0zM0 12h20v2H0z"/></svg>
+      </button>
     </div>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#signup" class="nav-cta">Get Started</a>
+    </nav>
   </header>
 
   <main>
@@ -64,99 +75,13 @@
       </figure>
     </section>
 
-
-    <section id="features" class="features container" aria-labelledby="features-heading">
-      <h2 id="features-heading" class="section-title">What GreenSense Does</h2>
-
-      <div class="features-grid">
-        <article class="feature-card" aria-labelledby="f1">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="36" height="36"><path fill="currentColor" d="M5 13h14v2H5zM5 7h14v2H5zM5 19h10v2H5z"/></svg>
-          </div>
-          <h3 id="f1">Transaction Tracking</h3>
-          <p>Log purchases and sales easily from your phone — seeds, soil, fertilizer, labor, and crop sales are tracked in one place.</p>
-        </article>
-
-        <article class="feature-card" aria-labelledby="f2">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="36" height="36"><path fill="currentColor" d="M12 2l3 7h7l-5.5 4 2 7L12 16 5.5 20 7.5 13 2 9h7z"/></svg>
-          </div>
-          <h3 id="f2">AI Insights</h3>
-          <p>Automatic analysis calculates profit per crop, cost-per-plant, seasonal trends, and recommends what to plant next season.</p>
-        </article>
-
-        <article class="feature-card" aria-labelledby="f3">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="36" height="36"><path fill="currentColor" d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10zm-1-14h2v6h-2V8zm0 8h2v2h-2v-2z"/></svg>
-          </div>
-          <h3 id="f3">Alerts & Reports</h3>
-          <p>Get alerts for cost spikes or failing crops and receive easy-to-read charts and summaries to make decisions quickly.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="how" class="how container" aria-labelledby="how-heading">
-      <h2 id="how-heading" class="section-title">How GreenSense Works</h2>
-      <ol class="steps">
-        <li>
-          <strong>1. Track transactions</strong>
-          <p>Record purchases and sales on mobile or web — fast data entry so you stay focused on farming.</p>
-        </li>
-        <li>
-          <strong>2. Let AI analyze</strong>
-          <p>GreenSense analyzes trends and calculates profitability per crop and per customer automatically.</p>
-        </li>
-        <li>
-          <strong>3. Take action</strong>
-          <p>Receive recommendations and alerts to reduce waste, adjust planting, and focus on the most profitable markets.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="info container" aria-labelledby="why-heading">
-      <h2 id="why-heading" class="section-title">Benefits for Small Farmers</h2>
-
-      <div class="info-grid">
-        <div>
-          <p>GreenSense solves real problems small greenhouse farmers face — financial blind spots, wasted produce, cash flow challenges, and planning difficulties. It's designed to be simple, affordable, and actionable.</p>
-          <ul class="benefits">
-            <li>✔ Know your true cost per crop</li>
-            <li>✔ Avoid overplanting and reduce spoilage</li>
-            <li>✔ Identify your most profitable customers</li>
-            <li>✔ Plan next season with confidence</li>
-          </ul>
-        </div>
-
-        <aside class="testimonial" aria-label="Farmer testimonial">
-          <blockquote>
-            "GreenSense helped me discover which crops were profitable and which weren't. I cut costs and grew my revenue within weeks."
-          </blockquote>
-          <cite>— Alex, AMCG Farm owner</cite>
-        </aside>
-      </div>
-    </section>
-
-    <section id="signup" class="cta-final container" aria-labelledby="signup-heading">
-      <div class="cta-card">
-        <h2 id="signup-heading">Ready to grow smarter?</h2>
-        <p>Join GreenSense and start turning transactions into insights. Free 30-day trial by signing up below!</p>
-
-        <form class="signup-form" action="#" method="post" novalidate>
-          <label for="email" class="sr-only">Email address</label>
-          <input id="email" name="email" type="email" placeholder="Your email address" required aria-required="true">
-          <button type="submit" class="btn btn-primary">Start free trial</button>
-        </form>
-
-        <p class="small">By signing up you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <a class="brand footer-brand" href="#" aria-label="GreenSense home">
-          <img src="landingpage.jpg" alt="Landing page logo" class="logo" width="48" height="48">
+          <img src="assets/landingpage.jpg" alt="Landing page logo" class="logo footer-logo" width="48" height="48">
           <span>GreenSense</span>
         </a>
 
@@ -184,6 +109,8 @@
       <small>© 2025 GreenSense. All rights reserved.</small>
     </div>
   </footer>
+
+  <script src="script.js" defer></script>
 
   <style>
     .sr-only {
