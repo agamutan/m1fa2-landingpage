@@ -1,1 +1,1 @@
-# m1fa2-landingpage
+Landing page for GreenSense
